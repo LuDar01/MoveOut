@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">                
+                <li><a href="profile.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="labels.html">LABELS</a></li>
+                <li><a class="logout" href="#">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-container">
+        <div class="page-box">
+            <h1>Labels</h1>
+
+            <div class="label-create">
+                <button class="add-label-btn" id="createLabelBtn">
+                    <i class="fa fa-plus"></i> Create Label
+                </button>
+            </div>
+
+            <div class="modal-overlay" id="modalOverlay"></div>
+            
+            <div class="label-modal" id="labelModal" style="display: none;">
+                <div class="modal-content">
+                    <button class="close-modal" id="closeModalBtn">&times;</button>
+
+                    <!-- Step 1: Label Type Selection -->
+                    <div class="label-options" style="display: block;">
+                        <h2>Select Label Type</h2>
+                        <input type="radio" id="fragile" name="labelType" value="fragile">
+                        <label for="fragile"><i class="fa-solid fa-wine-glass"></i> Fragile</label>
+                        <input type="radio" id="hazardous" name="labelType" value="hazardous">
+                        <label for="hazardous"><i class="fa fa-exclamation-triangle"></i> Hazardous</label>
+                        <input type="radio" id="heavy" name="labelType" value="heavy">
+                        <label for="heavy"><i class="fa fa-dolly"></i> Heavy</label>
+                    </div>
+                
+                    <!-- Step 2: Description Input -->
+                    <div class="description-input" style="display: none;">
+                        <h2>Add a Description</h2>
+                        <input type="text" id="description" placeholder="Enter a description">
+                    </div>
+                
+                    <!-- Step 3: File Upload -->
+                    <div class="file-upload" style="display: none;">
+                        <h2>Upload File</h2>
+                        <input type="file" id="fileInput">
+                    </div>
+
+                    <div class="button-container">
+                        <button id="prevBtn"> <i class="fa fa-arrow-left"></i>Previous</i></button>
+                        <button id="nextBtn">Next <i class="fa fa-arrow-right"></i></button>
+                    </div>
+
+                    <button id="createLabelBtnFinal" style="display: none;">Create Label</button>
+
+                </div>
+            </div>
+
+            <!-- Edit Modal -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">CONTACT US</a>
+            <a href="#">BUSINESS INQUIRIES</a>
+        </div>
+        <p>&copy;2024 MoveOutApp. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="js/labels.js"></script>
+</body>
+</html>

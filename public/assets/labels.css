@@ -1,0 +1,169 @@
+/* Modal styling */
+.label-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #FAF8F5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* Modal background overlay */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 999; /* Slightly lower than the modal itself */
+}
+
+
+/* Close button "X" styling */
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-modal:hover {
+    color: #D9534F; /* Change color to red when hovered */
+}
+
+/* Main button styling */
+.add-label-btn {
+    background-color: #D3C4B1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.add-label-btn:hover {
+    background-color: #B89F8B;
+}
+
+/* Modal content */
+.modal-content, .label-options, .description-input, .file-upload {
+    margin: 20px 0;
+}
+
+input[type="radio"] {
+    margin: 10px;
+}
+
+/* Center the Next and Create Label buttons */
+#nextBtn, #prevBtn, #createLabelBtnFinal {
+    display: inline;             /* Ensure they take up block space */
+    margin: 20px auto;          /* Auto margin to center horizontally */
+    background-color: #D3C4B1;
+    border: none;
+    padding: 5px 10px;
+    width:100px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Ensures the buttons are aligned next to each other */
+.button-container {
+    display: flex;  /* Use flexbox to align buttons */
+    justify-content: center;
+    gap: 10px;  /* Adds spacing between the buttons */
+}
+
+#nextBtn:hover, #prevBtn:hover #createLabelBtnFinal:hover {
+    background-color: #B89F8B;
+}
+
+.page-container {
+    text-align: center;
+}
+
+.page-box {
+    display: grid;  /* Change from text-align to grid */
+    grid-template-columns: repeat(5, 1fr);  /* Create 5 equal columns */
+    grid-gap: 20px;  /* Add space between the label boxes */
+    justify-items: center;  /* Center each label box horizontally */
+    padding: 20px;
+    margin-top: 30px; /* Add margin to create space under the button */
+    overflow: hidden;  /* Prevent overflow outside the box */
+}
+
+.label-create {
+    margin-bottom: 30px; /* Adds spacing below the "Create Label" button */
+}
+
+/* Styling for label boxes */
+.label-box {
+    width: 150px;  /* Fixed width to prevent layout shift */
+    height: 200px;  /* Fixed height to ensure consistent size */
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+
+.label-box:hover {
+    border-color: #B89F8B;
+    box-shadow: 0px 0px 5px #B89F8B(0, 0, 255, 0.5);  /* Add hover effect */
+}
+
+
+.label-box img {
+    display: block;
+    margin: 0 auto;  /* Center the QR code image */
+    width: 100px;  /* Optional: Control QR code size */
+    height: 100px;  /* Optional: Control QR code size */
+}
+
+/* Style the edit button inside the label */
+.edit-icon {
+    display: none;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Show the edit button when hovering over the label box */
+.label-box:hover .edit-icon {
+    display: block;
+}
+
+.page-box {
+    text-align: center;  /* Center align all labels inside the page */
+    padding: 20px;
+}
+
+
+/* QR code styling to ensure proper display */
+.qr-image {
+    display: block;
+    margin: 0 auto;
+    width: 100px; 
+    height: 100px;
+}

@@ -1,0 +1,312 @@
+/* Reset some basic styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('labels.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #4C4C4C;
+
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F3EDE8; /* Soft beige background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navigation Bar */
+header {
+    font-family: 'Arial', sans-serif;
+    background-color: #d6c3b1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    width: 95vw;
+    border-radius: 10px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4C4C4C;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #B89F8B;
+}
+
+/* Container for the form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Form box styling */
+.form-box {
+    background-color: #FAF8F5; /* Lighter beige for the box */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    width: 100%;
+}
+
+
+/* Modify the login title to match the font style in the image */
+.form-box h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #4C4C4C; /* Soft dark grey text */
+    letter-spacing: 2px; /* Add letter spacing for a more elegant look */
+    text-align: center;
+}
+
+
+/* Input field styling */
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ECE6E0; /* Light beige input background */
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button styling */
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #D3C4B1; /* Soft beige button background */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button:hover {
+    background-color: #B89F8B; /* Slightly darker on hover */
+}
+
+/* Register link */
+.form-box p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #4C4C4C;
+}
+
+.form-box a {
+    color: #4C4C4C;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.form-box a:hover {
+    color: #B89F8B; /* Hover color for the link */
+}
+
+.form-value {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #4C4C4C; /* Soft dark grey text */
+}
+
+.back-to-login {
+    text-align: center;
+}
+
+/* New styles for profile page */
+
+/* Profile Layout */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    width: 100%;
+    background-color: #FAF8F5;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture and username */
+.profile-pic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.profile-pic-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #4C4C4C;
+    margin-top: 10px;
+}
+
+/* Description Section */
+.description-section {
+    background-color: #FAF8F5; /* Lighter beige for the box */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.description-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #4C4C4C;
+    margin-bottom: 10px;
+}
+
+.description-section textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #ECE6E0;
+    border: none;
+    font-size: 16px;
+    resize: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description-section button {
+    padding: 10px 20px;
+    margin-left: 30%;
+    margin-right: 25%;
+    background-color: #D3C4B1;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.description-section button:hover {
+    background-color: #B89F8B;
+}
+
+/* Footer Section */
+footer {
+    background-color: #d6c3b1;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 95vw;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 20px;
+}
+
+/* Position and style the delete (bin) icon */
+.delete-pfp {
+    font-size: 15px; /* Size of the icon */
+    color: #B89F8B; /* Soft beige to match your style */
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.delete-pfp:hover {
+    color: #D9534F; /* Change color to red on hover to indicate delete */
+}
+
+/* Position and style the profile icon (default profile picture) */
+#profileImagePreview {
+    font-size: 100px; /* Size of the profile icon */
+    color: #B89F8B; /* Soft beige to match the theme */
+    cursor: pointer;
+}
+
+#profileIcon {
+    font-size: 100px;
+    color: #B89F8B;
+    cursor: pointer; /* Adds the pointer cursor when hovering over the icon */
+}
+
+/* About Us Section */
+.page-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.page-container h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4C4C4C;
+    font-size: 32px;
+    height: 10vh;
+}
+
+.page-box {
+    background-color: #FAF8F5; /* Light beige background for the box */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    width: 95vw;
+}
+
